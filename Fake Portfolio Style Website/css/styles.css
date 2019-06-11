@@ -1,0 +1,623 @@
+body {
+    font-family: 'Asap', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+#my-navbar {
+    top: 0;
+    position: fixed;
+    margin: 0px auto;
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    float: right;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#my-navbar ul {
+    margin: 0px;
+    padding: 10px 10px;
+    float: right;
+}
+
+#my-navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+#my-navbar ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#my-navbar ul li a:hover,
+#my-navbar ul li.activated a,
+.social ul li a:hover,
+.catagory a:hover,
+.breadcrumb li a:hover,
+.show-more a:hover,
+#websites a:hover,
+.tabs ul li a:hover,
+.tabs ul li.activated a,
+.tab3 a:hover {
+    color: #DE1B1B;
+}
+
+#main-content {
+    //margin: 50px auto;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.banner-container {
+    margin: 0px;
+    padding: 10px 10px;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-container h1 {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+
+.banner-container h2 {
+    margin: 0px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+    font-size: 4vw;
+}
+
+.content-container-container {
+    //max-width: 100%;
+    //max-height: 300px;
+    padding: 30px;
+}
+
+.content-container-container h2 {
+    padding: 10px;
+}
+
+.content-container {
+    max-width: 100%;
+    max-height: 250px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+}
+
+.content-container img {
+    padding: 10px 10px;
+    display: inline;
+    float: left;
+}
+
+
+/* Code taken from stackoverflow [1] changes so that it only activates on certain screen sizes */
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* Code taken from stackoverflow [1] changes so that it only activates on certain screen sizes */
+
+.scroll-container {
+    width: 2180px;
+    height: 200px;
+}
+
+.show-more {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    background-color: #000000;
+}
+
+.show-more a {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.breadcrumb {
+    margin: 0px;
+    padding: 10px 10px;
+    list-style: none;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+.breadcrumb > li > a {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.breadcrumb > li + li:before {
+    margin: 0px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    content: "/\00a0";
+}
+
+#my-footer {
+    margin: 0px auto;
+    padding: 10px 10px;
+    color: #FFFFFF;
+    width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.social ul {
+    margin: 0px;
+    padding: 10px 10px;
+}
+
+.social ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 0px 20px;
+    float: right;
+}
+
+.social ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+
+.catagory {
+    width: 100%;
+    margin: 30px -15px -25px 0px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.catagory a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bar {
+    color: #FFFFFF;
+    margin: 0px auto;
+    padding: 6.8px 15px;
+    float: left;
+    cursor: pointer;
+    font-size: 3.5vw;
+}
+
+.mobile {
+    display: none;
+}
+
+#websites,
+#programs,
+#graphics {
+    margin: 10px 0px;
+    padding: 20px 10px;
+}
+
+#websites h2,
+#programs h2,
+#graphics h2 {
+    margin: 0px 0px;
+    padding: 15px;
+    color: black;
+}
+
+#websites img,
+#programs img,
+#graphics img {
+    margin: 10px 0px;
+    padding: 20px 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.imgWrap {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.imgWrap a {
+    text-decoration: none;
+}
+
+.description {
+    font-size: 25px;
+}
+
+
+/* imgDescription class taken from stackoverflow [2] made changes to animation transition */
+
+.imgDescription {
+    padding: 60px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(43, 43, 43, 0.85);
+    color: #FFFFFF;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+/* End of imgDescription class taken from stackoverflow [2] made changes to animation transition */
+
+.imgDescription-mobile {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 4vw;
+    color: #FFFFFF;
+    margin: 0px 20px;
+    text-transform: uppercase;
+    background-color: #000000;
+}
+
+
+/* imgDescription class taken from stackoverflow [2] no changes here */
+
+.imgWrap:hover .imgDescription {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* end imgDescription class taken from stackoverflow [2] no changes here */
+
+.opener {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.tabs {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.tabs h2 {
+    padding: 15px 15px;
+}
+
+.tabs h2 {
+    padding: 15px 15px;
+}
+
+.tabs p {
+    padding: 15px 15px;
+}
+
+.tabs ul {
+    margin: 0px;
+    padding: 15px 10px;
+    float: left;
+}
+
+.tabs ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+.tabs ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tab-content {
+    margin: 40px 0px;
+    padding: 0px 0px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+    display: none;
+    padding: 30px 15px;
+    text-align: left;
+}
+
+.tab3 a {
+    text-align: left;
+    display: block;
+    margin: 20px;
+    padding: 15px 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.tab1.activated,
+.tab2.activated,
+.tab3.activated {
+    display: block;
+    padding-top: 50px;
+}
+
+.aboutpage-img-aboutme {
+    width: 100%;
+    height: 800px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.aboutpage-img-social {
+    width: 100%;
+    height: 550px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.tab1 div {
+    margin: 0px 0px;
+    padding: 5px 5px
+}
+
+.tab1 div:hover {
+    background-color: #DE1B1B;
+}
+
+.right {
+    float: right;
+}
+
+.tab1 div h2 {
+    margin: 0px 0px;
+    padding: 20px 15px
+}
+
+.content-text {
+    text-align: left;
+    background-color: #000000;
+    margin: 10px 0px;
+    padding: 20px 15px;
+    border-radius: 4px;
+}
+
+.content-text p {
+    margin: 10px 0px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+
+.gallary {
+    width: 830px;
+}
+
+.gallaryOptions {
+    width: 300px;
+    height: 415px;
+    float: right;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.gallaryOptions div {
+    margin: 11px;
+    padding: 25px 0px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.div1 {
+    background-color: #DE1B1B;
+}
+
+.div2 {
+    background-color: #FFA500;
+}
+
+.div3 {
+    background-color: #CCCC00;
+}
+
+.div4 {
+    background-color: #008000;
+}
+
+.div5 {
+    background-color: #0000FF;
+}
+
+.slideShow {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .gallary {
+        display: none;
+    }
+    .gallaryOptions {
+        display: none;
+    }
+    .slideShow {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .image {
+        width: 100%;
+        max-height: 150px;
+        padding: 5px;
+    }
+    .aboutpage-img-aboutme,
+    .aboutpage-img-social {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px;
+        padding: 10px 0px;
+    }
+    .imgWrap a:hover p {
+        color: #DE1B1B;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #my-navbar {
+        position: absolute;
+    }
+    #my-navbar ul {
+        float: none;
+    }
+    #my-footer {
+        text-align: center;
+    }
+    .social ul li {
+        float: none;
+    }
+    .image {
+        width: 100%;
+        max-height: 150px;
+        padding: 5px;
+    }
+    .tabs ul {
+        float: none;
+    }
+    .tab-content {
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    .tab1.activated,
+    .tab2.activated,
+    .tab3.activated {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Transition code taken from stackoverflow [3] no changes here */
+    .collapsed {
+        height: 0px;
+        -webkit-transition: height, 0.4s ease-in;
+        -moz-transition: height, 0.4s ease-in;
+        -ms-transition: height, 0.4s ease-in;
+        -o-transition: height, 0.4s ease-in;
+        transition: height, 0.4s ease-in;
+    }
+    .collapsed.closed {
+        height: 22em;
+        -webkit-transition: height, 0.4s ease-out;
+        -moz-transition: height, 0.4s ease-out;
+        -ms-transition: height, 0.4s ease-out;
+        -o-transition: height, 0.4s ease-out;
+        transition: height, 0.4s ease-out;
+    }
+    /* End of transition code taken from stackoverflow [3] no changes here */
+    #my-navbar ul {
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+    #my-navbar ul li {
+        display: block;
+        list-style: none;
+        margin: 30px 0px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .imgDescription-mobile {
+        padding: 0px;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .tabs ul li {
+        display: block;
+        margin: 10px;
+    }
+    .tab-content {
+        margin: -40px 0px;
+    }
+    .tabs {
+        padding-bottom: 50px;
+    }
+    .tab1 div h2 {
+        margin: 0px 0px;
+        padding: 5px 5px
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .tab1 div h2 {
+        font-size: 15px;
+    }
+}
